@@ -1,0 +1,1329 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>BIKERENT | Custom Rent & Repair</title>
+
+            <!-- Bootstrap CSS -->
+            <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+
+            <!-- Fontawesome -->
+            <link href="fontawesome/css/fontawesome.css" rel="stylesheet">
+            <link href="fontawesome/css/brands.css" rel="stylesheet">
+            <link href="fontawesome/css/solid.css" rel="stylesheet">
+
+            <!-- Owl Carousel CSS -->
+            <link rel="stylesheet" type="text/css" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.css">
+            <link rel="stylesheet" type="text/css" href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default.css">
+
+            <!-- Font Family -->
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+            <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+
+            <!-- Custom CSS and Icon -->
+            <link href="css/custom.css" rel="stylesheet" type="text/css" />
+            <link href="image/favicon-16x16.png" type="image/png" rel="Shortcut Icon" />
+        </head>
+        <body>
+        <!-- NAVIGATION BAR -->
+            <!-- Navbar Top -->
+            <div class="fixed-top top">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light p-0">
+                    <div class="container px-0">
+                        <div class="navbar-nav ml-auto">
+                            <a class="nav-link mr-3 px-0" href="#" style="font-size: small;"><i class="fas fa-mobile-alt" style="font-size: larger;"></i> Download Bikerent App</a>
+                        </div>
+                        <div>
+                            <div class="input-group flex-nowrap search">
+                                <div class="input-group-prepend">
+                                <span class="input-group-text" id="addon-wrapping" style="border:none; background-color:transparent;"><i class="fas fa-search"></i></span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="search bike to rent or be repaired" aria-label="Username" aria-describedby="addon-wrapping">
+                            </div>
+                            <!-- <input type="text" placeholder="search" style="border-radius:7px; border: none; height: 30px; width: 300px; font-size: small;">
+                            <button style="background-color: white; border: none; font-size: small;">Search</button> -->
+                        </div>
+                    <!-- <a class="navbar-brand" href="#"> -->
+                        <!-- <img src="images/ficube.png" class="img-fluid"> -->
+                        <!-- <i class="fas fa-mobile-alt"></i> Download Bikeshop App -->
+                    <!-- </a> -->
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav ml-auto">
+                                <a class="nav-link text-info mr-3" href="index.html">Home<span class="sr-only">(current)</span></a>
+                                <a class="nav-link mr-3" href="about.html">About Us</a>
+                                <a class="nav-link mr-3" href="blog.html">Blog</a>
+                                <a class="nav-link mr-3" href="portfolio.html">Portfolio</a>
+                                <a class="nav-link mr-3" href="contact.html">Contact Us</a>
+                                <a class="nav-link mr-3" href="location.html">Locations</a>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user-circle"></i></a>
+                                    <div class="dropdown-menu dropdown-menu-right" style="font-size: small;">
+                                        <!-- registration form -->
+                                        <form class="px-4 py-3">
+                                            <div class="form-group">
+                                              <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com" style="font-size: small;">
+                                            </div>
+                                            <div class="form-group">
+                                              <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password" style="font-size: small;">
+                                            </div>
+                                            <div class="form-group">
+                                              <div class="form-check">
+                                                <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                                                <label class="form-check-label" for="dropdownCheck">
+                                                  Remember me
+                                                </label>
+                                              </div>
+                                            </div>
+                                            <button type="submit" class="btn btn-dark" style="font-size: small;">Sign in</button>
+                                          </form>
+                                          <div class="dropdown-divider"></div>
+                                          <a class="dropdown-item" href="#">New around here? Sign up</a>
+                                          <a class="dropdown-item" href="#">Forgot password?</a>
+                                          <!-- end of registration form -->
+                                        <a class="dropdown-item" href="#"><i class="fas fa-user-cog"></i> Account</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#"><i class="fas fa-shopping-cart"></i> Booking</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#"><i class="fas fa-truck"></i> Delivery</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#"><i class="fas fa-envelope-open-text"></i> Messages</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                                    </div>
+                                </li>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+
+                <!-- Navbar Middle -->
+                <div class="container middle">
+                    <div class="row">
+                        <div class="col-md-2 px-0 logo">
+                            <a href="index.html"><img src="image/bikerent_white.png" alt="Bikerent" class="img-fluid" style="width: 100%; height: auto; position: absolute;"></a>
+                        </div>
+                        <div class="col-md-7 menu">
+                            <ul class="nav nav-pills justify-content-center">
+                                <li class="nav-item dropdown" style="background-color:none;">
+                                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" style="color: black;">Category</a>
+                                    <div class="dropdown-menu" style="font-size: small;">
+                                        <a class="dropdown-item" href="#">Indonesian</a>
+                                        <a class="dropdown-item" href="#">English</a>
+                                        <a class="dropdown-item" href="#">Dutch</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" style="color: black;">Brand</a>
+                                    <div class="dropdown-menu" style="font-size: small;">
+                                        <a class="dropdown-item" href="#">Rupiah</a>
+                                        <a class="dropdown-item" href="#">US Dollar</a>
+                                        <a class="dropdown-item" href="#">Euro</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" style="color: black;">Plan</a>
+                                    <div class="dropdown-menu" style="font-size: small;">
+                                        <a class="dropdown-item" href="#">Rupiah</a>
+                                        <a class="dropdown-item" href="#">US Dollar</a>
+                                        <a class="dropdown-item" href="#">Euro</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" style="color: black;">Services</a>
+                                    <div class="dropdown-menu" style="font-size: small;">
+                                        <a class="dropdown-item" href="#">Rupiah</a>
+                                        <a class="dropdown-item" href="#">US Dollar</a>
+                                        <a class="dropdown-item" href="#">Euro</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" style="color: black;">New Arrival</a>
+                                    <div class="dropdown-menu" style="font-size: small;">
+                                        <a class="dropdown-item" href="#">Rupiah</a>
+                                        <a class="dropdown-item" href="#">US Dollar</a>
+                                        <a class="dropdown-item" href="#">Euro</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" style="color: black;">Promo</a>
+                                    <div class="dropdown-menu" style="font-size: small;">
+                                        <a class="dropdown-item" href="#">Rupiah</a>
+                                        <a class="dropdown-item" href="#">US Dollar</a>
+                                        <a class="dropdown-item" href="#">Euro</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 headset">
+                            <table class="float-right mr-2">
+                                <tr>
+                                    <td rowspan="2"><i class="fas fa-headset" style="font-size: xx-large;"></i></td>
+                                    <td style="font-size: smaller;">Have a question?</td>
+                                </tr>
+                                <tr>
+                                    <td style="font-size: smaller;">Free Support: (021) 123 456 789</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>            
+                </div>
+            </div>
+            <!-- End of Navbar Middle -->
+            <!-- END OF NAVBAR -->
+
+            <!-- BANNER -->
+            <div class="container-fluid banner pb-5">
+                <!-- SLIDER -->
+                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                      </ol>
+                    <div class="carousel-inner">
+                        <!-- Slide 1 -->
+                        <div class="carousel-item active">
+                            <img src="image/pexels-lumn-296848.jpg" class="d-block w-100" id="image-homeBanner">
+                            <!-- Caption 1 -->
+                            <div class="container carousel-caption d-block text-justify">
+                                <div class="row py-5">
+                                    <div class="col-md-8 my-5">
+                                        <h4>Your Best Bike Solutions</h4>
+                                        <h1 class="font-weight-bold h1-banner">SPEED<br>your way out</h1>
+                                        <a href="#" class="btn btn-info btn-lg p-3 m-2" data-toggle="modal" data-target="#registrationModal">GET STARTED NOW!</a>
+                                        <a href="#" class="btn btn-info btn-lg p-3 m-2" data-toggle="modal" data-target="#plansModal">SEE OUR PLANS</a>
+                                    </div>
+                                    <div class="col-md-4"></div>
+                                </div>
+                            </div>
+                            
+                        <!-- Slide 2 -->
+                        </div>
+                        <div class="carousel-item">
+                            <img src="image/pexels-andrea-piacquadio-3775036.jpg" class="d-block w-100">
+                            <!-- Caption 2 -->
+                            <div class="container carousel-caption d-block text-justify">
+                                <div class="row py-5">
+                                    <div class="col-md-8 my-5">
+                                        <h4>Women's Day</h4>
+                                        <h1 class="font-weight-bold h1-banner">THE GREATEST<br>for the gorgeous ones</h1>
+                                        <a href="#" class="btn btn-info btn-lg p-3 m-2" data-toggle="modal" data-target="#registrationModal">GET STARTED NOW!</a>
+                                        <a href="#" class="btn btn-info btn-lg p-3 m-2" data-toggle="modal" data-target="#plansModal">SEE OUR PLANS</a>
+                                    </div>
+                                    <div class="col-md-4"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="image/passing-train-on-the-tracks-1598075.jpg" class="d-block w-100">
+                            <!-- Caption 3 -->
+                            <div class="container carousel-caption d-block text-justify">
+                                <div class="row py-5">
+                                    <div class="col-md-8 my-5">
+                                        <h4>Something's Good</h4>
+                                        <h1 class="font-weight-bold h1-banner">COMES<br> with high quality</h1>
+                                        <a href="#" class="btn btn-info btn-lg p-3 m-2" data-toggle="modal" data-target="#registrationModal">GET STARTED NOW!</a>
+                                        <a href="#" class="btn btn-info btn-lg p-3 m-2" data-toggle="modal" data-target="#plansModal">SEE OUR PLANS</a>
+                                    </div>
+                                    <div class="col-md-4"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                    </a>
+                </div>
+              </div>
+              <!-- END OF BANNER -->
+
+              <!-- PopUp Registration Session -->
+              <!-- <div class="modal fade" id="registrationModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="px-4 py-3">
+                            <div class="form-group">
+                              <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com" style="font-size: small;">
+                            </div>
+                            <div class="form-group">
+                              <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password" style="font-size: small;">
+                            </div>
+                            <div class="form-group">
+                              <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                                <label class="form-check-label" for="dropdownCheck">
+                                  <small>I agree to <a href="" >Privacy Policy</a></small>
+                                </label>
+                              </div>
+                            </div>
+                            <button type="submit" class="btn btn-info">Sign Up</button>
+                        </form>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Already a member? Sign in</a>
+                        <a class="dropdown-item" href="#">Forgot password?</a>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+
+              <!-- Modal Registration Session -->
+              <div class="modal fade" id="registrationModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="close">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body body-registration">
+                      
+                        <div class="container" id="container">
+                            <div class="form-container sign-up-container">
+                                <form action="" class="needs-validation" novalidate>
+                                    <h1>Create Account</h1>
+                                    <div class="social-container">
+                                        <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                                        <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                                        <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                                    </div>
+                                    <span>or use your email for registration</span>
+                                    <div class="form-group" style="position: relative;">
+                                        <input type="text" class="form-control" placeholder="Name" required/>
+                                        <div class="invalid-tooltip">Please input your name</div>
+                                    </div>
+                                    <div class="form-group" style="position: relative;">
+                                        <input type="email" class="form-control" placeholder="Email" required/>
+                                        <div class="invalid-tooltip">Please input your email</div>
+                                    </div>
+                                    <div class="form-group" style="position: relative;">
+                                        <input type="password" class="form-control" placeholder="Password" required/>
+                                        <div class="invalid-tooltip">Please input your password</div>
+                                    </div>
+                                    <div class="form-group" style="position: relative;">
+                                        <input type="password" class="form-control" placeholder="Confirm Password" required/>
+                                        <div class="invalid-tooltip">Please confirm your password</div>
+                                    </div>
+
+                                    <button class="static" type="submit">Sign Up</button>
+                                </form>
+
+                                
+
+                            </div>
+                            <div class="form-container sign-in-container">
+                                <form action="#" class="needs-validation" novalidate>
+                                    <h1>Sign in</h1>
+                                    <div class="social-container">
+                                        <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                                        <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                                        <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                                    </div>
+                                    <span>or use your account</span>
+                                    <div class="form-group" style="position: relative;">
+                                        <input type="text" class="form-control" placeholder="Name" required/>
+                                        <div class="invalid-tooltip">Please input your name</div>
+                                    </div>
+                                    <div class="form-group" style="position: relative;">
+                                        <input type="email" class="form-control" placeholder="Email" required/>
+                                        <div class="invalid-tooltip">Please input your email</div>
+                                    </div>
+                                    <a href="#">Forgot your password?</a>
+                                    <button class="static">Sign In</button>
+                                </form>
+
+                                <script>
+                                    // Example starter JavaScript for disabling form submissions if there are invalid fields
+                                    (function() {
+                                      'use strict';
+                                      window.addEventListener('load', function() {
+                                        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                                        var forms = document.getElementsByClassName('needs-validation');
+                                        // Loop over them and prevent submission
+                                        var validation = Array.prototype.filter.call(forms, function(form) {
+                                          form.addEventListener('submit', function(event) {
+                                            if (form.checkValidity() === false) {
+                                              event.preventDefault();
+                                              event.stopPropagation();
+                                            }
+                                            form.classList.add('was-validated');
+                                          }, false);
+                                        });
+                                      }, false);
+                                    })();
+                                </script>
+
+                            </div>
+                            <div class="overlay-container">
+                                <div class="overlay">
+                                    <div class="overlay-panel overlay-left">
+                                        <h1>Already a member?</h1>
+                                        <p>To keep connected with us please login with your personal info</p>
+                                        <button class="ghost" id="signIn">Sign In</button>
+                                    </div>
+                                    <div class="overlay-panel overlay-right">
+                                        <h1>New around here?</h1>
+                                        <p>Enter your personal details and start journey with us</p>
+                                        <button class="ghost" id="signUp">Sign Up</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Modal Pricing Table Session -->
+              <div class="modal fade" id="plansModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="close">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                          <div class="col-md-4 px-0">
+                            <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+                                <div class="card-header text-center">Standard</div>
+                                <div class="card-body">
+                                  <h3 class="card-title text-center">$49.99<small class="text-muted">/mo</small></h3>
+                                  <ul class="px-2">
+                                    <table>
+                                        <tr>
+                                            <td><li><i class="far fa-check-circle"></i> Lorem Ipsum is simply</li></td>
+                                        </tr>
+                                        <tr>
+                                            <td><li><i class="far fa-check-circle"></i> It is a long established</li></td>
+                                        </tr>
+                                        <tr>
+                                            <td><li class="text-muted"><i class="fas fa-times-circle"></i> Neque porro quisquam</li></td>
+                                        </tr>
+                                        <tr>
+                                            <td><li class="text-muted"><i class="fas fa-times-circle"></i> There are many</li></td>
+                                        </tr>
+                                        <tr>
+                                            <td><li class="text-muted"><i class="fas fa-times-circle"></i> The standard chunk</li></td>
+                                        </tr>
+                                        <tr>
+                                            <td><li class="text-muted"><i class="fas fa-times-circle"></i> All the Lorem Ipsum</li></td>
+                                        </tr>
+                                        <tr>
+                                            <td><li class="text-muted"><i class="fas fa-times-circle"></i> Lorem Ipsum used</li></td>
+                                        </tr>
+                                    </table>
+                                </ul>
+                                <button type="button" class="btn btn-outline-info btn-lg btn-block">I WANT IT</button>
+                                  <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                                </div>
+                            </div>
+                          </div>
+                          <div class="col-md-4 px-0">
+                            <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+                                <div class="card-header text-center">Premium</div>
+                                <div class="card-body">
+                                    <h3 class="card-title text-center">$119.99<small class="text-muted">/3 mos</small></h3>
+                                    <ul class="px-2">
+                                        <table>
+                                            <tr>
+                                                <td><li><i class="far fa-check-circle"></i> Lorem Ipsum is simply</li></td>
+                                            </tr>
+                                            <tr>
+                                                <td><li><i class="far fa-check-circle"></i> It is a long established</li></td>
+                                            </tr>
+                                            <tr>
+                                                <td><li><i class="far fa-check-circle"></i> Neque porro quisquam</li></td>
+                                            </tr>
+                                            <tr>
+                                                <td><li><i class="far fa-check-circle"></i> There are many</li></td>
+                                            </tr>
+                                            <tr>
+                                                <td><li class="text-muted"><i class="fas fa-times-circle"></i> The standard chunk</li></td>
+                                            </tr>
+                                            <tr>
+                                                <td><li class="text-muted"><i class="fas fa-times-circle"></i> All the Lorem Ipsum</li></td>
+                                            </tr>
+                                            <tr>
+                                                <td><li class="text-muted"><i class="fas fa-times-circle"></i> Lorem Ipsum used</li></td>
+                                            </tr>
+                                        </table>
+                                    </ul>
+                                    <button type="button" class="btn btn-outline-info btn-lg btn-block">I WANT IT</button>
+                                  <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                                </div>
+                            </div>
+                          </div>
+                          <div class="col-md-4 px-0">
+                            <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+                                <div class="card-header text-center">Ultimate</div>
+                                <div class="card-body">
+                                    <h3 class="card-title text-center">$199.99<small class="text-muted">/6 mos</small></h3>
+                                    <ul class="px-2">
+                                        <table>
+                                            <tr>
+                                                <td><li><i class="far fa-check-circle"></i> Lorem Ipsum is simply</li></td>
+                                            </tr>
+                                            <tr>
+                                                <td><li><i class="far fa-check-circle"></i> It is a long established</li></td>
+                                            </tr>
+                                            <tr>
+                                                <td><li><i class="far fa-check-circle"></i> Neque porro quisquam</li></td>
+                                            </tr>
+                                            <tr>
+                                                <td><li><i class="far fa-check-circle"></i> There are many</li></td>
+                                            </tr>
+                                            <tr>
+                                                <td><li><i class="far fa-check-circle"></i> The standard chunk</li></td>
+                                            </tr>
+                                            <tr>
+                                                <td><li><i class="far fa-check-circle"></i> All the Lorem Ipsum</li></td>
+                                            </tr>
+                                            <tr>
+                                                <td><li><i class="far fa-check-circle"></i> Lorem Ipsum used</li></td>
+                                            </tr>
+                                        </table>
+                                    </ul>
+                                    <button type="button" class="btn btn-outline-info btn-lg btn-block">I WANT IT</button>
+                                  <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                                </div>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <!-- PopUp Plans Session -->
+              <!-- <div class="modal fade" id="plansModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                        <table>
+                            <tr>
+                                <th>FEATURES</th>
+                                <th>STANDAR</th>
+                                <th>PREMIUM</th>
+                                <th>ULTIMATE</th>
+                            </tr>
+                            <tr>
+                                <td class="text-justify">Lorem Ipsum</td>
+                                <td><i class="far fa-check-circle"></i></td>
+                                <td><i class="far fa-check-circle"></i></td>
+                                <td><i class="far fa-check-circle"></i></td>
+                            </tr>
+                            <tr>
+                                <td class="text-justify">simply dummy text</td>
+                                <td><i class="far fa-check-circle"></i></td>
+                                <td><i class="far fa-check-circle"></i></td>
+                                <td><i class="far fa-check-circle"></i></td>
+                            </tr>
+                            <tr>
+                                <td class="text-justify">Contrary to popular</td>
+                                <td><i class="fas fa-times-circle"></i></td>
+                                <td><i class="far fa-check-circle"></i></td>
+                                <td><i class="far fa-check-circle"></i></td>
+                            </tr>
+                            <tr>
+                                <td class="text-justify">There are many</td>
+                                <td><i class="fas fa-times-circle"></i></td>
+                                <td><i class="far fa-check-circle"></i></td>
+                                <td><i class="far fa-check-circle"></i></td>
+                            </tr>
+                            <tr>
+                                <td class="text-justify">The standard chunk</td>
+                                <td><i class="fas fa-times-circle"></i></td>
+                                <td><i class="fas fa-times-circle"></i></td>
+                                <td><i class="far fa-check-circle"></i></td>
+                            </tr>
+                            <tr>
+                                <td class="text-justify">Sed ut perspiciatis</td>
+                                <td><i class="fas fa-times-circle"></i></td>
+                                <td><i class="fas fa-times-circle"></i></td>
+                                <td><i class="far fa-check-circle"></i></td>
+                            </tr>
+                            <tr>
+                                <td class="text-justify">Lorem ipsum dolor</td>
+                                <td><i class="fas fa-times-circle"></i></td>
+                                <td><i class="fas fa-times-circle"></i></td>
+                                <td><i class="far fa-check-circle"></i></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><button type="button" class="btn btn-dark"><a href="">$9.00</a></button></td>
+                                <td>BUY IT</td>
+                                <td>BUY IT</td>
+                            </tr>
+                        </table>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Already a member? Sign in</a>
+                        <a class="dropdown-item" href="#">Forgot password?</a>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+
+              <!-- SECTION 1: Home -->
+              <div class="container-fluid py-5">
+                  <div class="row home">
+                      <div class="col-md-4">
+                        <table>
+                            <table>
+                                <tr>
+                                    <td><a href=""><img src="image/home1.jpg" alt="home1" class="img-fluid"></a></td>
+                                    <div class="container left-right-picture">
+                                        <div class="row">
+                                            <div class="col-md-6 col-sm-6 col-6"></div>
+                                            <div class="col-md-6 col-sm-6 col-6">
+                                                <h5 class="position-absolute">Promo Product</h5>
+                                                <h3 class="position-absolute">BEST QUALITY BIKES WITH UP TO 50% OFF</h3>
+                                                <!-- <button type="button" class="btn btn-outline-light position-absolute" style="z-index: 100; margin-top: 170px; border-radius: 20px;">View Detail</button> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </tr>
+                            </table>
+                            <table>
+                                <tr>
+                                    <td><a href=""><img src="image/home4.jpg" alt="home4" class="img-fluid"></a></td>
+                                    <div class="container left-right-picture">
+                                        <div class="row">
+                                            <div class="col-md-6 col-sm-6 col-6"></div>
+                                            <div class="col-md-6 col-sm-6 col-6">
+                                                <h5 class="position-absolute">Top Product</h5>
+                                                <h3 class="position-absolute">STYLISH OFF-ROAD AND MOUNTAIN BIKES</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </tr>
+                            </table>
+                        </table>
+                      </div>
+                      <div class="col-md-4">
+                          <table>
+                              <tr>
+                                <td><a href=""><img src="image/home2.jpg" alt="home2" class="img-fluid"></a></td>
+                                <div class="container middle-picture">
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-6 col-6">
+                                            <h4 class="position-absolute">AWARD</h4>
+                                            <h1 class="position-absolute">BEST SERVICE OF THE YEAR</h1>
+                                        </div>
+                                        <div class="col-md-6 col-sm-6 col-6"></div>
+                                    </div>
+                                </div>
+                              </tr>
+                          </table>
+                      </div>
+                      <div class="col-md-4">
+                        <table>
+                            <table>
+                                <tr>
+                                    <td><a href=""><img src="image/home3.jpg" alt="home3" class="img-fluid"></a></td>
+                                    <div class="container left-right-picture">
+                                        <div class="row">
+                                            <div class="col-md-6 col-sm-6 col-6">
+                                                <h5 class="position-absolute">Brand Product</h5>
+                                                <h3 class="position-absolute">BEST CITY BIKES BRANDS</h3>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 col-6"></div>
+                                        </div>
+                                    </div>
+                                </tr>
+                            </table>
+                            <table>
+                                <tr>
+                                    <td><a href=""><img src="image/home5.jpg" alt="home5" class="img-fluid"></a></td>
+                                    <div class="container left-right-picture">
+                                        <div class="row">
+                                            <div class="col-md-6 col-sm-6 col-6">
+                                                <h5 class="position-absolute">Featured Product</h5>
+                                                <h3 class="position-absolute">BEST ACCESSORIES RECOMMENDATION</h3>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 col-6"></div>
+                                        </div>
+                                    </div>
+                                </tr>
+                            </table>
+                        </table>
+                      </div>
+                  </div>
+              </div>
+
+              <!-- SECTION 2: Inspiration -->
+              <div class="container-fluid bg-light">
+                  <div class="row">
+                      <div class="col-md-12">
+                          <h4 class="text-center p-3">Inspirations of The Year</h4>
+                      </div>
+                  </div>
+              </div>
+              <div class="container-fluid bg-light pb-5 inspiration">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="inspiration-card">
+                            <img src="image/inspiration1.jpg" class="img-fluid" alt="inspiration1">
+                            <div class="inspiration-text">
+                                <h4>Boardman HYB 8.8</h4>
+                                <h6>City Bike</h6>
+                                <h3>$2<span style="font-size: small;"> /day</span></h3>
+                                <h5 class="my-2">2 days free for new members!</h5>
+                                <a href="#" class="btn btn-info btn-lg p-3 m-2">GET STARTED NOW!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="inspiration-card">
+                            <img src="image/inspiration2.jpg" class="img-fluid" alt="inspiration2">
+                            <div class="inspiration-text">
+                                <h4>Ribble Hybrid AL</h4>
+                                <h6>City Bike</h6>
+                                <h3>$2<span style="font-size: small;"> /day</span></h3>
+                                <h5 class="my-2">2 days free for new members!</h5>
+                                <a href="#" class="btn btn-info btn-lg p-3 m-2">GET STARTED NOW!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="inspiration-card">
+                            <img src="image/inspiration3.jpg" class="img-fluid" alt="inspiration3">
+                            <div class="inspiration-text">
+                                <h4>Ridley Tempo</h4>
+                                <h6>City Bike</h6>
+                                <h3>$2<span style="font-size: small;"> /day</span></h3>
+                                <h5 class="my-2">2 days free for new members!</h5>
+                                <a href="#" class="btn btn-info btn-lg p-3 m-2">GET STARTED NOW!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="inspiration-card">
+                            <img src="image/inspiration4.jpg" class="img-fluid" alt="inspiration4">
+                            <div class="inspiration-text">
+                                <h4>Specialized Sirrus 1.0</h4>
+                                <h6>City Bike</h6>
+                                <h3>$2<span style="font-size: small;"> /day</span></h3>
+                                <h5 class="my-2">2 days free for new members!</h5>
+                                <a href="#" class="btn btn-info btn-lg p-3 m-2">GET STARTED NOW!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- SECTION 3: Home Product Pagination -->
+            <div class="container my-5 list">
+                <div class="row">
+                    <div class="col-md-4 dropdown-divider"></div>
+                    <div class="col-md-4">
+                        <ul class="nav nav-tabs center">
+                            <li class="nav-item">
+                              <a class="nav-link active" style="background-color: black; color: white;" href="#">New Arrival</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link non-active" href="#">Featured</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link non-active" href="#">Top Rated</a>
+                            </li>
+                          </ul>
+                    </div>
+                    <div class="col-md-3 dropdown-divider"></div>
+                    <div class="col-md-1 pagination">
+                        <a href=""><i class="fas fa-chevron-left p-2 mx-1"></i></a>
+                        <a href=""><i class="fas fa-chevron-right p-2 mx-1"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- SECTION 4: Home Product Carousel -->
+            <div class="container my-4">
+                <div class="row owl-carousel owl-theme owl-home" id="owl-carousel-home">
+                    <div class="col-md-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="image/bike1.png" class="card-img-top img-fluid w-100" style="height: 12rem;" alt="Alchemy">
+                            <div class="card-body text-center">
+                              <h6 class="bike-type">Mountain Bike</h6>
+                              <h5 class="card-title">Alchemy</h5>
+                              <p class="card-text" style="font-size: larger; background-color: black; color: white;"><span style="font-size: xx-large;">$3</span> / day</p>
+                              <p class="card-text" style="font-size: smaller;">*including helmet and bike lock</p>
+                              <a href="#" class="btn btn-info">Book Me!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="image/bike2.png" class="card-img-top img-fluid w-100" style="height: 12rem;" alt="Bianchi">
+                            <div class="card-body text-center">
+                              <h6 class="bike-type">Mountain Bike</h6>
+                              <h5 class="card-title">Bianchi</h5>
+                              <p class="card-text" style="font-size: larger; background-color: black; color: white;"><span style="font-size: xx-large;">$3</span> / day</p>
+                              <p class="card-text" style="font-size: smaller;">*including helmet and bike lock</p>
+                              <a href="#" class="btn btn-info">Book Me!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="image/bike3.png" class="card-img-top img-fluid w-100" style="height: 12rem;" alt="Cannondale">
+                            <div class="card-body text-center">
+                              <h6 class="bike-type">Mountain Bike</h6>
+                              <h5 class="card-title">Cannondale</h5>
+                              <p class="card-text" style="font-size: larger; background-color: black; color: white;"><span style="font-size: xx-large;">$3</span> / day</p>
+                              <p class="card-text" style="font-size: smaller;">*including helmet and bike lock</p>
+                              <a href="#" class="btn btn-info">Book Me!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="image/bike4.png" class="card-img-top img-fluid w-100" style="height: 12rem;" alt="Colnago">
+                            <div class="card-body text-center">
+                              <h6 class="bike-type">Mountain Bike</h6>
+                              <h5 class="card-title">Colnago</h5>
+                              <p class="card-text" style="font-size: larger; background-color: black; color: white;"><span style="font-size: xx-large;">$3</span> / day</p>
+                              <p class="card-text" style="font-size: smaller;">*including helmet and bike lock</p>
+                              <a href="#" class="btn btn-info">Book Me!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="image/bike5.png" class="card-img-top img-fluid w-100" style="height: 12rem;" alt="Co-op">
+                            <div class="card-body text-center">
+                              <h6 class="bike-type">Mountain Bike</h6>
+                              <h5 class="card-title">Co-op</h5>
+                              <p class="card-text" style="font-size: larger; background-color: black; color: white;"><span style="font-size: xx-large;">$3</span> / day</p>
+                              <p class="card-text" style="font-size: smaller;">*including helmet and bike lock</p>
+                              <a href="#" class="btn btn-info">Book Me!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="image/bike6.png" class="card-img-top img-fluid w-100" style="height: 12rem;" alt="Critical/Retrospec">
+                            <div class="card-body text-center">
+                              <h6 class="bike-type">Mountain Bike</h6>
+                              <h5 class="card-title">Critical/Retrospec</h5>
+                              <p class="card-text" style="font-size: larger; background-color: black; color: white;"><span style="font-size: xx-large;">$3</span> / day</p>
+                              <p class="card-text" style="font-size: smaller;">*including helmet and bike lock</p>
+                              <a href="#" class="btn btn-info">Book Me!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SECTION 5: Category Banner 1 -->
+            <div class="container-fluid my-5 category-banner">
+                <div class="row">
+                    <div class="col-md-12 px-0">
+                        <img src="image/pexels-pixabay-248559.jpg" class="img-fluid image" alt="category">
+                        <div class="category-text text-center">
+                            <div class="text">
+                                <div class="center">
+                                    <h4>Mountain Bike</h4>
+                                    <h1 style="font-family: 'Oswald', sans-serif;">Specialized Cirrus 1.0 2021</h1>
+                                    <h5>Starting <span style="font-size: x-large; color: greenyellow; font-weight: bold;">$4</span> / plan</h5>
+                                    <h5 class="my-4">2 days free for new members!</h5>
+                                    <a href="#" class="btn btn-info btn-lg p-3 m-2">GET STARTED NOW!</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- SECTION 6: Category List -->
+            <div class="container my-5 list">
+                <div class="row">
+                    <div class="col-md-2" style="font-family: 'Oswald', sans-serif; font-size: larger; background-color:#f8f9fa; padding: 10px;">Category</div>
+                    <div class="col-md-6 dropdown-divider"></div>
+                    <div class="col-md-3">
+                        <ul class="nav nav-tabs right">
+                            <li class="nav-item">
+                              <a class="nav-link active" style="background-color: black; color: white;" href="#">Male</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link non-active" href="#">Female</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link non-active" href="#">Unisex</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-1 pagination py-2">
+                        <a href=""><i class="fas fa-chevron-left p-2 mx-1"></i></a>
+                        <a href=""><i class="fas fa-chevron-right p-2 mx-1"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- SECTION 7: Category Carousel -->
+            <div class="container my-5">
+                <div class="row owl-carousel owl-theme owl-home" id="owl-carousel-category">
+                    <div class="col-md-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="image/bike1.png" class="card-img-top img-fluid w-100" style="height: 12rem;" alt="Alchemy">
+                            <div class="card-body text-center">
+                              <h6 class="bike-type">Mountain Bike</h6>
+                              <h5 class="card-title">Alchemy</h5>
+                              <p class="card-text" style="font-size: larger; background-color: black; color: white;"><span style="font-size: xx-large;">$3</span> / day</p>
+                              <p class="card-text" style="font-size: smaller;">*including helmet and bike lock</p>
+                              <a href="#" class="btn btn-info">Book Me!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="image/bike2.png" class="card-img-top img-fluid w-100" style="height: 12rem;" alt="Bianchi">
+                            <div class="card-body text-center">
+                              <h6 class="bike-type">Mountain Bike</h6>
+                              <h5 class="card-title">Bianchi</h5>
+                              <p class="card-text" style="font-size: larger; background-color: black; color: white;"><span style="font-size: xx-large;">$3</span> / day</p>
+                              <p class="card-text" style="font-size: smaller;">*including helmet and bike lock</p>
+                              <a href="#" class="btn btn-info">Book Me!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="image/bike3.png" class="card-img-top img-fluid w-100" style="height: 12rem;" alt="Cannondale">
+                            <div class="card-body text-center">
+                              <h6 class="bike-type">Mountain Bike</h6>
+                              <h5 class="card-title">Cannondale</h5>
+                              <p class="card-text" style="font-size: larger; background-color: black; color: white;"><span style="font-size: xx-large;">$3</span> / day</p>
+                              <p class="card-text" style="font-size: smaller;">*including helmet and bike lock</p>
+                              <a href="#" class="btn btn-info">Book Me!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="image/bike4.png" class="card-img-top img-fluid w-100" style="height: 12rem;" alt="Colnago">
+                            <div class="card-body text-center">
+                              <h6 class="bike-type">Mountain Bike</h6>
+                              <h5 class="card-title">Colnago</h5>
+                              <p class="card-text" style="font-size: larger; background-color: black; color: white;"><span style="font-size: xx-large;">$3</span> / day</p>
+                              <p class="card-text" style="font-size: smaller;">*including helmet and bike lock</p>
+                              <a href="#" class="btn btn-info">Book Me!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="image/bike5.png" class="card-img-top img-fluid w-100" style="height: 12rem;" alt="Co-op">
+                            <div class="card-body text-center">
+                              <h6 class="bike-type">Mountain Bike</h6>
+                              <h5 class="card-title">Co-op</h5>
+                              <p class="card-text" style="font-size: larger; background-color: black; color: white;"><span style="font-size: xx-large;">$3</span> / day</p>
+                              <p class="card-text" style="font-size: smaller;">*including helmet and bike lock</p>
+                              <a href="#" class="btn btn-info">Book Me!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="image/bike6.png" class="card-img-top img-fluid w-100" style="height: 12rem;" alt="Critical/Retrospec">
+                            <div class="card-body text-center">
+                              <h6 class="bike-type">Mountain Bike</h6>
+                              <h5 class="card-title">Critical/Retrospec</h5>
+                              <p class="card-text" style="font-size: larger; background-color: black; color: white;"><span style="font-size: xx-large;">$3</span> / day</p>
+                              <p class="card-text" style="font-size: smaller;">*including helmet and bike lock</p>
+                              <a href="#" class="btn btn-info">Book Me!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SECTION 8: Category Banner 2 -->
+            <div class="container-fluid category-banner my-5">
+                <div class="row">
+                    <div class="col-md-12 px-0">
+                        <img src="image/pexels-visionpic-net-1539966.jpg" class="img-fluid image" alt="category">
+                        <div class="category-text text-center">
+                            <div class="text">
+                                <div class="center">
+                                    <h4>City Bike</h4>
+                                    <h1 style="font-family: 'Oswald', sans-serif;">Spring Style 2021</h1>
+                                    <h5>Starting <span style="font-size: x-large; color: greenyellow; font-weight: bold;">$4</span> / plan</h5>
+                                    <h5 class="my-4">2 days free for new members!</h5>
+                                    <a href="#" class="btn btn-info btn-lg p-3 m-2">GET STARTED NOW!</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SECTION 9: Category Table -->
+            <div class="container-fluid my-5">
+                <div class="container">
+                    <div class="row category-table">
+                        <div class="col-md-6">
+                            <table>
+                                <tr>
+                                  <td><a href=""><img src="image/pexels-elina-sazonova-1850629.jpg" alt="female" class="img-fluid"></a></td>
+                                  <div class="container">
+                                      <div class="row">
+                                          <div class="col-md-4 col-sm-4 col-4"></div>
+                                          <div class="col-md-8 col-sm-8 col-8 table-text">
+                                            <h1 style="right: 10%;">FEMALE</h1>
+                                            <button type="button" class="btn btn-outline-light position-absolute" style="right: 10%;">View Detail</button>
+                                          </div>
+                                      </div>
+                                  </div>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col-md-6">
+                            <table>
+                                <tr>
+                                  <td><a href=""><img src="image/pexels-andrea-piacquadio-3778107.jpg" alt="male" class="img-fluid"></a></td>
+                                  <div class="container">
+                                      <div class="row">
+                                          <div class="col-md-8 col-sm-8 col-8 table-text">
+                                            <h1 style="left: 10%;">MALE</h1>
+                                            <button type="button" class="btn btn-outline-light position-absolute" style="left: 10%;">View Detail</button>
+                                          </div>
+                                          <div class="col-md-4 col-sm-4 col-4"></div>
+                                      </div>
+                                  </div>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- HOT BRANDS -->
+            <!-- <div class="container">
+                <div class="row">
+                    <div class="col-md-5 dropdown-divider"></div>
+                    <div class="col-md-2" style="font-family: 'Oswald', sans-serif; font-size: larger; background-color: #f8f9fa; text-align: center;">HOT BRANDS</div>
+                    <div class="col-md-5 dropdown-divider"></div>
+                </div>
+            </div> -->
+
+            <!-- SECTION 10: Brand Carousel -->
+            <!-- <div class="container brand-logo">
+                <div class="row owl-carousel owl-theme">
+                    <div class="col-md-2">
+                        <div class="card brand-card" style="width: 8rem;">
+                            <img src="image/bike logo 1.jpg" class="card-img-top" alt="...">
+                          </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="card" style="width: 8rem;">
+                            <img src="image/bike logo 2.jpg" class="card-img-top" alt="...">
+                          </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="card" style="width: 8rem;">
+                            <img src="image/bike logo 3.jpg" class="card-img-top" alt="...">
+                          </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="card" style="width: 8rem;">
+                            <img src="image/bike logo 4.jpg" class="card-img-top" alt="...">
+                          </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="card" style="width: 8rem;">
+                            <img src="image/bike logo 5.jpg" class="card-img-top" alt="...">
+                          </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="card" style="width: 8rem;">
+                            <img src="image/bike logo 6.jpg" class="card-img-top" alt="...">
+                          </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="card" style="width: 8rem;">
+                            <img src="image/bike logo 7.jpg" class="card-img-top" alt="...">
+                          </div>
+                    </div>
+                </div>
+            </div> -->
+
+            <!-- SECTION 10: Blog Post PAgination -->
+            <div class="container list">
+                <div class="row">
+                    <div class="col-md-2" style="font-family: 'Oswald', sans-serif; font-size: larger; background-color:#f8f9fa; padding: 10px;">Blog Posts</div>
+                    <div class="col-md-6 dropdown-divider"></div>
+                    <div class="col-md-3">
+                        <ul class="nav nav-tabs right">
+                            <li class="nav-item">
+                              <a class="nav-link active" style="background-color: black; color: white;" href="#">Trending</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link non-active" href="#">Other</a>
+                            </li>
+                          </ul>
+                    </div>
+                    <div class="col-md-1 pagination py-2">
+                        <a href=""><i class="fas fa-chevron-left p-2 mx-1"></i></a>
+                        <a href=""><i class="fas fa-chevron-right p-2 mx-1"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SECTION 11: Blog Post -->
+            <!-- <div class="container my-5">
+                <div class="row">
+                    <div class="col-md-3 card-deck">
+                        <div class="card">
+                            <img src="image/blog-post-1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title text-capitalize">Lorem Ipsum is simply dummy text of the printing and typesetting industry</h5>
+                              <p class="card-text"><a href="">Bikerent</a></p>
+                            </div>
+                            <div class="card-footer">
+                              <small class="text-muted">3 mins ago - 3 mins read</small>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-md-3 card-deck">
+                        <div class="card">
+                            <img src="image/blog-post-1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title text-capitalize">Lorem Ipsum is simply dummy text of the printing and typesetting industry</h5>
+                              <p class="card-text"><a href="">Bikerent</a></p>
+                            </div>
+                            <div class="card-footer">
+                              <small class="text-muted">3 mins ago - 3 mins read</small>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-md-3 card-deck">
+                        <div class="card">
+                            <img src="image/blog-post-1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title text-capitalize">Lorem Ipsum is simply dummy text of the printing and typesetting industry</h5>
+                              <p class="card-text"><a href="">Bikerent</a></p>
+                            </div>
+                            <div class="card-footer">
+                              <small class="text-muted">3 mins ago - 3 mins read</small>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-md-3 card-deck">
+                        <div class="card">
+                            <img src="image/blog-post-1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title text-capitalize">Lorem Ipsum is simply dummy text of the printing and typesetting industry</h5>
+                              <p class="card-text"><a href="">Bikerent</a></p>
+                            </div>
+                            <div class="card-footer">
+                              <small class="text-muted">3 mins ago - 3 mins read</small>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div> -->
+
+            <div class="container my-5">
+                <div class="row card-group">
+                    <div class="col-md-3 card card-blog">
+                        <img src="image/blog-post-1.jpg" class="card-img-top" alt="post1">
+                        <div class="card-body">
+                          <h5 class="card-title text-capitalize"><a href="">Lorem Ipsum is simply dummy text of the printing and typesetting industry</a></h5>
+                          <p class="card-text"><a href="">Bikerent</a></p>
+                        </div>
+                        <div class="card-footer">
+                          <small class="text-muted">3 mins ago - 3 mins read</small>
+                        </div>
+                    </div>
+                    <div class="col-md-3 card card-blog">
+                        <img src="image/blog-post-2.jpg" class="card-img-top" alt="post2">
+                        <div class="card-body">
+                          <h5 class="card-title text-capitalize"><a href="">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</a></h5>
+                          <p class="card-text"><a href="">Bikerent</a></p>
+                        </div>
+                        <div class="card-footer">
+                          <small class="text-muted">3 mins ago - 3 mins read</small>
+                        </div>
+                    </div>
+                    <div class="col-md-3 card card-blog">
+                        <img src="image/blog-post-3.jpg" class="card-img-top" alt="post3">
+                        <div class="card-body">
+                          <h5 class="card-title text-capitalize"><a href="">There are many variations of passages of Lorem Ipsum available</a></h5>
+                          <p class="card-text"><a href="">Bikerent</a></p>
+                        </div>
+                        <div class="card-footer">
+                          <small class="text-muted">3 mins ago - 3 mins read</small>
+                        </div>
+                    </div>
+                    <div class="col-md-3 card card-blog">
+                        <img src="image/blog-post-4.jpg" class="card-img-top" alt="post4">
+                        <div class="card-body">
+                          <h5 class="card-title text-capitalize"><a href="">Contrary to popular belief, Lorem Ipsum is not simply random text</a></h5>
+                          <p class="card-text"><a href="">Bikerent</a></p>
+                        </div>
+                        <div class="card-footer">
+                          <small class="text-muted">3 mins ago - 3 mins read</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SECTION 12: Footer Body -->
+                
+                <div class="container-fluid py-4 footer-header">
+                    <!-- 12a: Facilities -->
+                    <div class="container mb-5 facilities">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h5>Free Shipping</h5>
+                                <p>Free delivery and pick up service</p>
+                            </div>
+                            <div class="col-md-4">
+                                <h5>Money Back Guarantee</h5>
+                                <p>100% return within 14 days</p>
+                            </div>
+                            <div class="col-md-4">
+                                <h5>Online Support</h5>
+                                <p>24/7 free support</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 12b: Description -->
+                    <div class="container my-5 description">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h6>World's Most Trusted Bike Rental and Service</h6>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 12c: Subscription -->
+                    <div class="container my-5 subscription">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="app-icon">
+                                    <h6>Get Bikerent Mobile Apps</h6>
+                                    <div><a href=""><img src="image/icon_AppStore_2.png" alt="apple store" class="img-fluid"></a></div>
+                                    <div><a href=""><img src="image/icon_GooglePlay(monochrome).png" alt="google play" class="img-fluid"></a></div>
+                                </div>
+                                <div class="social-media mt-4">
+                                    <h6>Let's Get Social</h6>
+                                    <div>
+                                        <a href=""><i class="fab fa-facebook mr-1"></i></a>
+                                        <a href=""><i class="fab fa-twitter mx-1"></i></a>
+                                        <a href=""><i class="fab fa-instagram mx-1"></i></a>
+                                        <a href=""><i class="fab fa-pinterest mx-1"></i></a>
+                                        <a href=""><i class="fab fa-youtube ml-1"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <h6>Information</h6>
+                                <p><a href="">About Us</a></p>
+                                <p><a href="">Delivery Information</a></p>
+                                <p><a href="">Privacy Policy</a></p>
+                                <p><a href="">Terms & Conditions</a></p>
+                                <p><a href="">Customer Service</a></p>
+                                <p><a href="">Career</a></p>
+                            </div>
+                            <div class="col-md-2">
+                                <h6>Personal Account</h6>
+                                <p><a href="">My Account</a></p>
+                                <p><a href="">Order History</a></p>
+                                <p><a href="">Wishlist</a></p>
+                                <p><a href="">Blog</a></p>
+                                <p><a href="">Sign In/Sign Up</a></p>
+                                <p><a href="">Guarantee Policy</a></p>
+                            </div>
+                            <div class="col-md-4 text-center">
+                                <h4>Subscribe Newsletter</h4>
+                                <p>Stay updated for new collection & special offer</p>
+                                <form action="" method="POST">
+                                    <div class="input-group flex-nowrap submit-email">
+                                        <div class="input-group-prepend">
+                                            <input type="email" class="form-control mx-4" placeholder="Type your email" aria-label="Email" aria-describedby="addon-wrapping">
+                                        </div>
+                                    </div>
+                                    <div class="submit mt-4">
+                                        <input type="submit" class="btn btn-light" value="Subscribe">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 12d: Language -->
+                    <div class="container mb-5 language">
+                        <div class="col-md-12 text-center">
+                            <h6>Languages</h6>
+                            <a href="">Indonesian</a>
+                            <a href="">English</a>
+                            <a href="">Čeština</a>
+                            <a href="">العربية</a>
+                            <a href="">Ελληνικά</a>
+                            <a href="">Español</a>
+                            <a href="">Français</a>
+                            <a href="">Magyar</a>
+                            <a href="">हिंदी</a>
+                            <a href="">Italiano</a>
+                            <a href="">日本語</a>
+                            <a href="" style="border: none;">한국어</a>
+                        </div>
+                    </div>
+
+                    <!-- 12e: Payment Option -->
+                    <div class="container payment-option">
+                        <div class="col-md-12 text-center">
+                            <h6>Payment Partners</h6>
+                            <i class="fab fa-cc-visa"></i>
+                            <i class="fab fa-cc-mastercard"></i>
+                            <i class="fab fa-cc-paypal"></i>
+                        </div>
+                    </div>
+                </div>
+
+                
+            <!-- Boostrap -->
+            <script src="js/jquery-3.5.1.slim.min.js"></script>
+            <script src="js/popper.min.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+
+            <!-- Owl Carousel -->
+            <script type="text/javascript" src="OwlCarousel2-2.3.4/docs/assets/vendors/jquery.min.js"></script>
+            <script type="text/javascript" src="OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
+            
+            <!-- function -->
+            <script src="js/function.js"></script>
+        </body>
+        <footer>
+            Copyright &copy; <img src="image/bikerent_white.png" alt="logo" class="img-fluid" style="width: 50px; height: auto;"> by <a href="https://www.linkedin.com/in/linda-oktavianty-22b650ba/" target="blank">Linda Nurul Oktavianty</a>. All Right Reserved.
+        </footer>
+    </html>
