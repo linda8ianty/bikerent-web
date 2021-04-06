@@ -1,4 +1,117 @@
-// ==== PORTFOLIO ==== //
+// ==== INDEX.HTML ==== //
+
+// Modal Registration Session
+$('#signUp').click(function(){
+    $('#registration-container').addClass('right-panel-active');
+});
+
+$('#signIn').click(function(){
+    $('#registration-container').removeClass('right-panel-active');
+});
+
+// Modal Registration Validation Tooltip (from Bootstrap)
+(function() {
+    'use strict';
+    window.addEventListener('load', function() {
+      var forms = document.getElementsByClassName('needs-validation');
+      var validation = Array.prototype.filter.call(forms, function(form) {
+        form.addEventListener('submit', function(event) {
+          if (form.checkValidity() === false) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+          form.classList.add('was-validated');
+        }, false);
+      });
+    }, false);
+})();
+
+//OWL CAROUSEL
+// owl carousel index.html
+$('.owl-home').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    autoplay:true,
+    autoplayTimeout:3000,
+    autoplayHoverPause:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
+        900:{
+            items:3
+        }
+    }
+})
+
+// owl carousel portfolio.html
+$('.owl-brand').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    autoplay:true,
+    autoplayTimeout:3000,
+    autoplayHoverPause:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:4
+        },
+        900:{
+            items:6
+        }
+    }
+});
+
+// Product Pagination
+$(document).ready(function(){
+    $('.list-nav-product').click(function(e){
+        $('.list-nav-product').removeClass('active');
+        $('.list-nav-product').addClass('non-active');
+        $(this).addClass('active');
+        $(this).removeClass('non-active');
+        e.preventDefault();
+    });
+});
+
+$(document).ready(function(){
+    $('.list-nav-category').click(function(e){
+        $('.list-nav-category').removeClass('active');
+        $('.list-nav-category').addClass('non-active');
+        $(this).addClass('active');
+        $(this).removeClass('non-active');
+        e.preventDefault();
+    });
+});
+
+$(document).ready(function(){
+    $('.list-nav-blog').click(function(e){
+        $('.list-nav-blog').removeClass('active');
+        $('.list-nav-blog').addClass('non-active');
+        $(this).addClass('active');
+        $(this).removeClass('non-active');
+        e.preventDefault();
+    });
+});
+
+// ==== LOCATION.HTML ==== //
+
+$(document).ready(function(){
+    $('.location-link').click(function(e){
+        $('.location-link').removeClass('active text-info');
+        $(this).addClass('active text-info');
+        e.preventDefault();
+    });
+});
+
+
+// ==== PORTFOLIO.HTML ==== //
 
 $(document).ready(function(){
     $('.imgSmall').click(function(){
@@ -52,88 +165,130 @@ for(var i = 0; i < imgSmall.length; i++) {
     }
 }
 
+// ==== TODO.HTML ==== //
+// Elements
+var list = document.getElementById("list");
+var input = document.getElementById("input");
 
-//OWL CAROUSEL
-// owl carousel index.html
-$('.owl-home').owlCarousel({
-    loop:true,
-    margin:10,
-    nav:true,
-    autoplay:true,
-    autoplayTimeout:3000,
-    autoplayHoverPause:true,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:2
-        },
-        900:{
-            items:3
-        }
-    }
-})
+// Classes
+var CHECK = "fa-check-circle";
+var UNCHECK = "fa-circle";
+var LINE_THROUGH = "lineThrough";
 
-// owl carousel portfolio.html
-$('.owl-brand').owlCarousel({
-    loop:true,
-    margin:10,
-    nav:true,
-    autoplay:true,
-    autoplayTimeout:3000,
-    autoplayHoverPause:true,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:4
-        },
-        900:{
-            items:6
-        }
-    }
-})
+// Variables
+var LIST = null;
+var id = null;
+let data = localStorage.getItem("TODO");
 
-//==== MODAL ===//
-// Modal Registration Session
-var signUpButton = document.getElementById('signUp');
-var signInButton = document.getElementById('signIn');
-var container = document.getElementById('container');
+// check if data is not empty
+if(data){
+    LIST = JSON.parse(data);
+    id = LIST.length;
+    loadList(LIST);
+}else{
+    LIST = [];
+    id = 0;
+};
 
-signUpButton.addEventListener('click', function() {
-	container.classList.add("right-panel-active");
+// load items to the user's interface
+function loadList(array){
+    array.forEach(function(item){
+        addToDo(item.name, item.id, item.done, item.trash);
+    });
+}
+
+// clear the local storage
+$('.clear').click(function(){
+    localStorage.clear();
+    location.reload();
 });
 
-signInButton.addEventListener('click', function() {
-	container.classList.remove("right-panel-active");
+// Show todays date
+var options = {weekday : "long", month:"short", day:"numeric", year:"numeric"};
+var today = new Date();
+var dateToday = today.toLocaleDateString("en-US", options);
+
+// set date
+$('#date').html(dateToday);
+
+// if submit button is clicked
+$('#btnSubmit').click(function(e){
+    e.preventDefault();
+    var toDo = input.value;
+        
+    if(toDo){
+        addToDo(toDo, id, false, false);
+        
+        LIST.push({
+            name : toDo,
+            id : id,
+            done : false,
+            trash : false
+        });
+        localStorage.setItem("TODO", JSON.stringify(LIST));
+        id++;
+    }
+    input.value = "";
 });
 
-// // Tooltip
-// $(function () {
-//     $('[data-toggle="tooltip"]').tooltip()
-// })
+// add to do function
+function addToDo(toDo, id, done, trash){
+    if(trash){ return; }
+    
+    var DONE = done ? CHECK : UNCHECK;
+    var LINE = done ? LINE_THROUGH : "";
+    
+    var item = `<li class="item">
+                    <i class="far ${DONE} circle" status="complete" id="${id}"></i>
+                    <p class="text ${LINE}">${toDo}</p>
+                    <i class="fas fa-trash-alt trash" status="delete" id="${id}"></i>
+                  </li>
+                `;
+    
+    var position = "beforeend";
+    list.insertAdjacentHTML(position, item);
+};
 
-// // Registration Modal Form
 
-// // Example starter JavaScript for disabling form submissions if there are invalid fields
-// (function() {
-//     'use strict';
-//     window.addEventListener('load', function() {
-//       // Fetch all the forms we want to apply custom Bootstrap validation styles to
-//       var forms = document.getElementsByClassName('needs-validation');
-//       // Loop over them and prevent submission
-//       var validation = Array.prototype.filter.call(forms, function(form) {
-//         form.addEventListener('submit', function(event) {
-//           if (form.checkValidity() === false) {
-//             event.preventDefault();
-//             event.stopPropagation();
-//           }
-//           form.classList.add('was-validated');
-//         }, false);
-//       });
-//     }, false);
-// })();
+// complete to do
+function completeToDo(element){
+    element.classList.toggle(CHECK);
+    element.classList.toggle(UNCHECK);
+    element.parentNode.querySelector(".text").classList.toggle(LINE_THROUGH);
+    
+    LIST[element.id].done = LIST[element.id].done ? false : true;
+};
+
+// remove to do
+function removeToDo(element){
+    element.parentNode.parentNode.removeChild(element.parentNode);
+    
+    LIST[element.id].trash = true;
+};
+
+$('#list').click(function(event){
+    var element = event.target;
+    var elementStatus = element.attributes.status.value;
+    
+    if(elementStatus == "complete"){
+        completeToDo(element);
+    }else if(elementStatus == "delete"){
+        removeToDo(element);
+    }
+    localStorage.setItem("TODO", JSON.stringify(LIST));
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

@@ -1,7 +1,30 @@
 /* GENERAL */
 
+/* navigation bar */
+@media (max-width: 1199.98px) {
+    .navbar-collapse {
+        font-size: x-small;
+    }
+    .home {
+        font-size: smaller;
+    }
+}
+
+.owl-home .card,
+.owl-brand .card {
+    border: none;
+}
+
+/* other */
 .top {
     background-color: rgba(255, 255, 255, 0.6);
+}
+ .top .mobile a {
+     font-size: small;
+ }
+
+.top .fa-mobile-alt {
+    font-size: larger;
 }
 
 .list .nav-item .active {
@@ -11,6 +34,10 @@
 
 .list .nav-item .non-active {
     background-color: none;
+    color: black;
+}
+
+.list .nav-item a{
     color: black;
 }
 
@@ -341,41 +368,6 @@
     z-index: 99;
 }
 
-/* #plansModal table {
-    text-align: center;
-}
-
-#plansModal table tr,
-#plansModal table td,
-#plansModal table th {
-    border: 1px solid black;
-    padding: 5px;
-}
-
-#plansModal table td button:hover {
-    background-color: white;
-    color: black;
-}
-
-#plansModal table td button a {
-    text-decoration: none;
-    color: white;
-}
-
-#plansModal table td button a:hover {
-    color: black;
-}
-
-#plansModal table .fa-check-circle {
-    font-family: "Font Awesome 5 Free";
-    color: #96bb7c;
-}
-
-#plansModal table .fa-times-circle {
-    font-family: "Font Awesome 5 Free";
-    color: #c64756;
-} */
-
 /* DROPDOWN */
 .dropdown-menu {
     border: none;
@@ -400,8 +392,17 @@
     padding-right: 4px;
 }
 
+.search .fa-search {
+    cursor: pointer;
+}
+
 .search {
     height: 30px;
+}
+
+.search span {
+    border: none;
+    background-color: transparent;
 }
 
 .search input[type="text"] {
@@ -551,26 +552,7 @@
 .category-banner .category-text .text {
     color: white;
     position: relative;
-    
-    /* top: 0; */
-    /* right: 0; */
-    /* -webkit-transform: translate(-50%, -50%); */
-    /* -ms-transform: translate(-50%, -50%); */
-    /* transform: translate(-50%, -50%); */
-    
-    /* white-space: nowrap; */
-    /* flex-direction: column; */
-    /* align-items: center; */
-    /* justify-content: center; */
-    /* top: 50%; */
 }
-
-/* .category-banner .category-text .text .center {
-    position: absolute;
-    top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-} */
 
 /* SECTION 9: Category Table */
 .category-table .table-text h1 {
@@ -579,26 +561,13 @@
     font-family: 'Oswald', sans-serif;
     font-size: 100px;
     line-height: 3;
-    /* text-align: right; */
-    /* top: 100%; */
-    /* right: 0; */
 }
-
-/* .category-table .table-text button {
-    position: absolute;
-    font-family: 'Oswald', sans-serif;
-    font-size: 30px;
-    line-height: 4;
-    padding: 10px;
-} */
 
 .category-table .table-text button {
     z-index: 100;
     margin-top: 225px;
     border-radius: 20px;
     border: 2px solid white;
-    /* border: 10px; */
-    /* right: 10%; */
 }
 
 /* SECTION 11: Blog Posts */
@@ -662,7 +631,6 @@
     z-index: 100;
     color: white;
     margin-top: 40px;
-    /* background-color: black; */
     padding: 5px;
 }
 
@@ -789,7 +757,7 @@
     padding-left: 30px;
 }
 
-.sidebar-submenu { /* check */
+.sidebar-submenu {
     font-size: 0.9rem;
 }
 
@@ -894,6 +862,84 @@
 
 .contact .contact-content .main-post .post-text {
     padding-top: 0;
+}
+
+/* ------------ TO DO ----------------- */
+.clear{
+    width : 30px;
+    height: 30px;
+    position: absolute;
+    right:20px;
+    top: 20px;
+}
+.clear i{
+    font-size: 30px;
+}
+.clear i:hover{
+    cursor: pointer;
+    transform: rotate(45deg);
+}
+#date{
+    bottom: 10px;
+    left: 10px;
+}
+
+.content{
+    width:380px;
+    height: 350px;
+    max-height:350px;
+    overflow: auto;
+}
+.content::-webkit-scrollbar { 
+    display: none; 
+}
+.content ul{
+    padding:0;
+    margin:0;
+}
+.item{
+    height: 45px;
+    min-height: 45px;
+    position: relative;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.item i.circle{
+    position: absolute;
+    font-size: 20px;
+    padding-left:5px;
+    left:15px;
+    top:20px;
+}
+.item i.circle:hover{
+    cursor: pointer;
+}
+.fa-check-circle{
+    color:#6eb200;
+}
+.item p.text{
+    position: absolute;
+    padding:0;
+    margin:0;
+    left:50px;
+    top:15px;
+    max-width:285px;
+}
+.lineThrough{
+    text-decoration: line-through;
+    color : #a2b29f;
+}
+.item i.trash{
+    position: absolute;
+    font-size: 20px;
+    right:15px;
+    top:20px;
+}
+.item i.trash:hover{
+    color: red;
+    cursor: pointer;
 }
 
 /* ------------- PORTFOLIO ------------------ */

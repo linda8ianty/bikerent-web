@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>BIKERENT | Custom Rent & Repair</title>
+
+            <!-- Bootstrap CSS -->
+            <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+
+            <!-- Fontawesome -->
+            <link href="fontawesome/css/fontawesome.css" rel="stylesheet">
+            <link href="fontawesome/css/brands.css" rel="stylesheet">
+            <link href="fontawesome/css/solid.css" rel="stylesheet">
+            <link href="fontawesome/css/regular.css" rel="stylesheet">
+
+            <!-- Owl Carousel CSS -->
+            <link rel="stylesheet" type="text/css" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.css">
+            <link rel="stylesheet" type="text/css" href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default.css">
+
+            <!-- Font Family -->
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+            <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+
+            <!-- Custom CSS and Icon -->
+            <link href="css/custom.css" rel="stylesheet" type="text/css" />
+            <link href="image/favicon-16x16.png" type="image/png" rel="Shortcut Icon" />
+        </head>
+        <body>
+        <!-- NAVIGATION BAR -->
+            <!-- Navbar Top -->
+            <div class="fixed-top top">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light p-0">
+                    <div class="container px-0">
+                        <div class="navbar-nav mobile ml-auto">
+                            <a class="nav-link mr-3 px-0" href="#"><i class="fas fa-mobile-alt"></i> Download Bikerent App</a>
+                        </div>
+                        <div>
+                            <div class="input-group flex-nowrap search">
+                                <div class="input-group-prepend">
+                                <span class="input-group-text" id="addon-wrapping"><i class="fas fa-search"></i></span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="search bike to rent or be repaired" aria-label="Username" aria-describedby="addon-wrapping">
+                            </div>
+                        </div>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav ml-auto">
+                                <a class="nav-link mr-3" href="index.html">Home</a>
+                                <a class="nav-link mr-3" href="about.html">About Us</a>
+                                <a class="nav-link mr-3" href="blog.html">Blog</a>
+                                <a class="nav-link mr-3" href="portfolio.html">Portfolio</a>
+                                <a class="nav-link mr-3" href="contact.html">Contact Us</a>
+                                <a class="nav-link mr-3" href="location.html">Locations</a>
+                                <a class="nav-link text-info mr-3" href="todo.html"><span class="sr-only">(current)</span>To Do</a>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user-circle"></i></a>
+                                    <div class="dropdown-menu dropdown-menu-right" style="font-size: small;">
+                                        <!-- registration form -->
+                                        <form class="px-4 py-3">
+                                            <div class="form-group">
+                                              <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com" style="font-size: small;">
+                                            </div>
+                                            <div class="form-group">
+                                              <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password" style="font-size: small;">
+                                            </div>
+                                            <div class="form-group">
+                                              <div class="form-check">
+                                                <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                                                <label class="form-check-label" for="dropdownCheck">
+                                                  Remember me
+                                                </label>
+                                              </div>
+                                            </div>
+                                            <button type="submit" class="btn btn-dark" style="font-size: small;">Sign in</button>
+                                          </form>
+                                          <div class="dropdown-divider"></div>
+                                          <a class="dropdown-item" href="#">New around here? Sign up</a>
+                                          <a class="dropdown-item" href="#">Forgot password?</a>
+                                          <!-- end of registration form -->
+                                        <a class="dropdown-item" href="#"><i class="fas fa-user-cog"></i> Account</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#"><i class="fas fa-shopping-cart"></i> Booking</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#"><i class="fas fa-truck"></i> Delivery</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#"><i class="fas fa-envelope-open-text"></i> Messages</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                                    </div>
+                                </li>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+
+                <!-- Navbar Middle -->
+                <div class="container middle">
+                    <div class="row">
+                        <div class="col-lg-2 d-none d-lg-block d-xl-block px-0 logo">
+                            <a href="index.html"><img src="image/bikerent_white.png" alt="Bikerent" class="img-fluid" style="width: 100%; height: auto; position: absolute;"></a>
+                        </div>
+                        <div class="col-lg-7 menu">
+                            <ul class="nav nav-pills justify-content-center">
+                                <li class="nav-item dropdown" style="background-color:none;">
+                                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" style="color: black;">Category</a>
+                                    <div class="dropdown-menu" style="font-size: small;">
+                                        <a class="dropdown-item" href="#">Category 1</a>
+                                        <a class="dropdown-item" href="#">Category 2</a>
+                                        <a class="dropdown-item" href="#">Category 3</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" style="color: black;">Brand</a>
+                                    <div class="dropdown-menu" style="font-size: small;">
+                                        <a class="dropdown-item" href="#">Brand 1</a>
+                                        <a class="dropdown-item" href="#">Brand 2</a>
+                                        <a class="dropdown-item" href="#">Brand 3</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" style="color: black;">Plan</a>
+                                    <div class="dropdown-menu" style="font-size: small;">
+                                        <a class="dropdown-item" href="#">Plan 1</a>
+                                        <a class="dropdown-item" href="#">Plan 2</a>
+                                        <a class="dropdown-item" href="#">Plan 3</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" style="color: black;">Services</a>
+                                    <div class="dropdown-menu" style="font-size: small;">
+                                        <a class="dropdown-item" href="#">Service 1</a>
+                                        <a class="dropdown-item" href="#">Service 2</a>
+                                        <a class="dropdown-item" href="#">Service 3</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" style="color: black;">New Arrival</a>
+                                    <div class="dropdown-menu" style="font-size: small;">
+                                        <a class="dropdown-item" href="#">New Arrival 1</a>
+                                        <a class="dropdown-item" href="#">New Arrival 2</a>
+                                        <a class="dropdown-item" href="#">New Arrival 3</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" style="color: black;">Promo</a>
+                                    <div class="dropdown-menu" style="font-size: small;">
+                                        <a class="dropdown-item" href="#">Promo 1</a>
+                                        <a class="dropdown-item" href="#">Promo 2</a>
+                                        <a class="dropdown-item" href="#">Promo 3</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 headset">
+                            <table class="float-right mr-2">
+                                <tr>
+                                    <td rowspan="2"><i class="fas fa-headset" style="font-size: xx-large;"></i></td>
+                                    <td style="font-size: smaller;">Have a question?</td>
+                                </tr>
+                                <tr>
+                                    <td style="font-size: smaller;">Free Support: (021) 123 456 789</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>            
+                </div>
+            </div>
+            <!-- End of Navbar Middle -->
+            <!-- END OF NAVBAR -->
+
+            <!-- 2b: CONTENT -->
+            <div class="container-fluid  todo-content mt-5">
+                <div class="container main-location">
+                    <div class="row">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-10">
+                            <div class="card bg-light main-post text-justify mb-5">
+                                <div class="img-wrapper">
+                                </div>
+                                <div class="card-body pb-0 post-text">
+                                    <div class="row card-content mt-5">
+                                        <div class="col-md-6 my-4">
+                                            <h4 class="text-center">Get your order matter with our TO DO list.</h4>
+                                            <div class="row my-4">
+                                                <div class="col-md-12">
+                                                    <form class="todoForm">
+                                                        <div class="form-group add-to-do">
+                                                            <input type="text" class="form-control" id="input" placeholder="Input your to do list here">
+                                                        </div>
+                                                        <button type="submit" class="btn btn-dark" id="btnSubmit">Submit</button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6" style="background-color: #e1e1e3;">
+                                            <div class="location-center my-5 text-center">
+                                                <div class="workshop mb-5">
+                                                    <h6 class="mb-3">Your To Do lists appear here.</h6>
+                                                    <div class="container">
+                                                        <div class="header">
+                                                            <div class="clear">
+                                                                <i class="fas fa-sync-alt"></i>
+                                                            </div>
+                                                            <div id="date"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-12 content">
+                                                                <ul id="list">
+                                                                    <!-- (to do lists appearance will be like this) -->
+                                                                   <!-- 
+                                                                    <li class="item">
+                                                                        <i class="far fa-circle circle" status="complete" id="0"></i>
+                                                                        <p class="text">Drink Coffee</p>
+                                                                        <i class="fas fa-trash-alt trash" status="delete" id="0"></i> 
+                                                                    </li> -->
+                                                                </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-1"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SECTION 12: FOOTER BODY -->
+                <div class="container-fluid py-4 footer-header">
+                    <!-- 12a: Facilities -->
+                    <div class="container mb-5 facilities">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h5>Free Shipping</h5>
+                                <p>Free delivery and pick up service</p>
+                            </div>
+                            <div class="col-md-4">
+                                <h5>Money Back Guarantee</h5>
+                                <p>100% return within 14 days</p>
+                            </div>
+                            <div class="col-md-4">
+                                <h5>Online Support</h5>
+                                <p>24/7 free support</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 12b: Description -->
+                    <div class="container my-5 description">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h6>World's Most Trusted Bike Rental and Service</h6>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 12c: Subscription -->
+                    <div class="container my-5 subscription">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="app-icon">
+                                    <h6>Get Bikerent Mobile Apps</h6>
+                                    <div><a href=""><img src="image/icon_AppStore_2.png" alt="apple store" class="img-fluid"></a></div>
+                                    <div><a href=""><img src="image/icon_GooglePlay(monochrome).png" alt="google play" class="img-fluid"></a></div>
+                                </div>
+                                <div class="social-media mt-4">
+                                    <h6>Let's Get Social</h6>
+                                    <div>
+                                        <a href=""><i class="fab fa-facebook mr-1"></i></a>
+                                        <a href=""><i class="fab fa-twitter mx-1"></i></a>
+                                        <a href=""><i class="fab fa-instagram mx-1"></i></a>
+                                        <a href=""><i class="fab fa-pinterest mx-1"></i></a>
+                                        <a href=""><i class="fab fa-youtube ml-1"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <h6>Information</h6>
+                                <p><a href="">About Us</a></p>
+                                <p><a href="">Delivery Information</a></p>
+                                <p><a href="">Privacy Policy</a></p>
+                                <p><a href="">Terms & Conditions</a></p>
+                                <p><a href="">Customer Service</a></p>
+                                <p><a href="">Career</a></p>
+                            </div>
+                            <div class="col-md-2">
+                                <h6>Personal Account</h6>
+                                <p><a href="">My Account</a></p>
+                                <p><a href="">Order History</a></p>
+                                <p><a href="">Wishlist</a></p>
+                                <p><a href="">Blog</a></p>
+                                <p><a href="">Sign In/Sign Up</a></p>
+                                <p><a href="">Guarantee Policy</a></p>
+                            </div>
+                            <div class="col-md-4 text-center">
+                                <h4>Subscribe Newsletter</h4>
+                                <p>Stay updated for new collection & special offer</p>
+                                <form action="" method="POST">
+                                    <div class="input-group flex-nowrap submit-email">
+                                        <div class="input-group-prepend">
+                                            <input type="email" class="form-control mx-4" placeholder="Type your email" aria-label="Email" aria-describedby="addon-wrapping">
+                                        </div>
+                                    </div>
+                                    <div class="submit mt-4">
+                                        <input type="submit" class="btn btn-light" value="Subscribe">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 12d: Language -->
+                    <div class="container mb-5 language">
+                        <div class="col-md-12 text-center">
+                            <h6>Languages</h6>
+                            <a href="">Indonesian</a>
+                            <a href="">English</a>
+                            <a href="">Čeština</a>
+                            <a href="">العربية</a>
+                            <a href="">Ελληνικά</a>
+                            <a href="">Español</a>
+                            <a href="">Français</a>
+                            <a href="">Magyar</a>
+                            <a href="">हिंदी</a>
+                            <a href="">Italiano</a>
+                            <a href="">日本語</a>
+                            <a href="" style="border: none;">한국어</a>
+                        </div>
+                    </div>
+
+                    <!-- 12e: Payment Option -->
+                    <div class="container payment-option">
+                        <div class="col-md-12 text-center">
+                            <h6>Payment Partners</h6>
+                            <i class="fab fa-cc-visa"></i>
+                            <i class="fab fa-cc-mastercard"></i>
+                            <i class="fab fa-cc-paypal"></i>
+                        </div>
+                    </div>
+                </div>
+
+                
+            <!-- Boostrap -->
+            <script src="js/jquery-3.5.1.slim.min.js"></script>
+            <script src="js/popper.min.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+
+            <!-- Owl Carousel -->
+            <script type="text/javascript" src="OwlCarousel2-2.3.4/docs/assets/vendors/jquery.min.js"></script>
+            <script type="text/javascript" src="OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
+
+            <!-- function -->
+            <script src="js/function.js"></script>
+            
+        </body>
+        <footer>
+            Copyright &copy; <img src="image/bikerent_white.png" alt="logo" class="img-fluid" style="width: 50px; height: auto;"> by <a href="https://www.linkedin.com/in/linda-oktavianty-22b650ba/" target="blank">Linda Nurul Oktavianty</a>. All Right Reserved.
+        </footer>
+    </html>
