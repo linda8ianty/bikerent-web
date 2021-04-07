@@ -8,6 +8,9 @@
     .home {
         font-size: smaller;
     }
+    .category-banner .category-text{
+        font-size: small;
+    }
 }
 
 .owl-home .card,
@@ -450,7 +453,6 @@
 }
 .home img:hover {
     -webkit-filter:contrast(100%);
-    /* -webkit-filter:contrast(70%); */
 }
 
 .home .left-right-picture h5 {
@@ -472,7 +474,6 @@
     z-index: 100;
     color: white;
     margin-top: 40px;
-    /* background-color: black; */
     padding: 5px;
 }
 

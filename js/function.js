@@ -26,6 +26,7 @@ $('#signIn').click(function(){
     }, false);
 })();
 
+
 //OWL CAROUSEL
 // owl carousel index.html
 $('.owl-home').owlCarousel({
@@ -239,9 +240,9 @@ function addToDo(toDo, id, done, trash){
     var LINE = done ? LINE_THROUGH : "";
     
     var item = `<li class="item">
-                    <i class="far ${DONE} circle" status="complete" id="${id}"></i>
+                    <i class="far ${DONE} circle" status="complete" id="${id}" data-toggle="tooltip" data-placement="left" title="mark as completed"></i>
                     <p class="text ${LINE}">${toDo}</p>
-                    <i class="fas fa-trash-alt trash" status="delete" id="${id}"></i>
+                    <i class="fas fa-trash-alt trash" status="delete" id="${id}" data-toggle="tooltip" data-placement="right" title="delete this list"></i>
                   </li>
                 `;
     
